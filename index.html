@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <div class="items-box">
+        <div class="score-board">
+            <h2 id="scoreAnnouncement">You vs Cpu</h2>
+            <div class="players-score">
+                <p id="humanScore">0</p>
+                <p>-</p>
+                <p id="computerScore">0</p>
+            </div>
+        </div>
+        <div class="choice-board">
+            <div class="human-text">
+                <p id="humanChoice">You</p>
+            </div>
+            <p id="middle-vs">vs</p>
+            <div class="computer-text">
+                <p id="computerChoice">Cpu</p>
+            </div>
+        </div>
+        <div class="buttons-box">
+            <button onclick="clickRock()"><img src="./media/granite_6223796.png" alt="paper"></button>
+            <audio id="rockAudio" src="./media/rock.wav"></audio>
+            
+            <button onclick="clickPaper()"><img src="./media/copy_2319460.png" alt="paper"></button>
+            <audio id="paperAudio" src="./media/paper.wav"></audio>
+            
+            <button onclick="clickScissor()"><img src="./media/school_14045614.png" alt="paper"></button>
+            <audio id="scissorAudioOne" src="./media/scissor-one.ogg"></audio>
+            <audio id="scissorAudioTwo" src="./media/scissor-two.wav"></audio>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

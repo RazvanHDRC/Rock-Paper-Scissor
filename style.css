@@ -1,0 +1,162 @@
+body {
+    background-color: rgba(0, 0, 0, 0.932);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+}
+
+h1 {
+    color: #b4190e;
+    text-shadow: 1px 1px 2px #ca473e;
+    font-size: 52px;
+    font-weight: 900;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+
+p,
+h2 {
+    color: #e7d7c1;
+    text-shadow: 1px 1px 1px black;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-width: 280px;
+    max-height: 280px;
+}
+
+button {
+    border-width: 8px;
+    border-radius: 14px;
+}
+
+.items-box {
+    display: flex;
+    background-color: #e7d7c1;
+    padding: 26px 12px;
+    flex-direction: column;
+    margin-bottom: 120px;
+    border-radius: 8px;
+    border: 2.8px solid #8c1c13;
+}
+
+.score-board {
+    display: flex;
+    background-color: #bf4342;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    border: 2px solid #8c1c13;
+}
+
+#scoreAnnouncement {
+    margin-left: 1.4px;
+}
+
+.human-text,
+.computer-text {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+}
+
+
+
+.winner-color {
+    animation: fadingWinnerColor 1 0.2s linear;
+}
+
+@keyframes fadingWinnerColor {
+    0% {
+        color: rgb(45, 212, 45);
+    }
+    100% {
+        color: #e7d7c1;
+    }
+}
+
+.loser-color {
+    animation: fadingLoserColor 1 0.2s linear;
+}
+
+@keyframes fadingLoserColor {
+    0% {
+        color: rgb(224, 28, 28);
+    }
+    100% {
+        color: #e7d7c1;
+    }
+}
+
+.text-animation-left {
+    animation: leftFadingInAnimation 1 0.2s linear;
+}
+
+@keyframes leftFadingInAnimation {
+    0% {
+        translate: -300px 0px 0px;
+        opacity: 0%;
+    }
+    50% {
+        opacity: 20%;
+    }
+    100% {
+        translate: 0px 0px 0px;
+        opacity: 100%;
+    }
+}
+
+.text-animation-right {
+    animation: rightFadingInAnimation 1 0.2s linear;
+}
+
+@keyframes rightFadingInAnimation {
+    0% {
+        translate: 340px 0px 0px;
+        opacity: 0%;
+    }
+    50% {
+        opacity: 30%;
+    }
+    100% {
+        translate: 0px 0px 0px;
+        opacity: 100%;
+    }
+}
+
+.players-score {
+    display: flex;
+    gap: 5px;
+}
+
+.choice-board {
+    display: flex;
+    background-color: #bf4342;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    height: 42px;
+    padding: 6px 300px;
+    border-radius: 8px;
+    border: 2px solid #8c1c13;
+}
+
+.buttons-box {
+    display: flex;
+    gap: 20px;
+}
